@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body class="body">
+
+    <nav class="teal lighten-2">
+        <div class="container">
+
+            <div class="nav-wrapper">
+                <a href="/" class="brand-logo">Кодинг</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="module">Образовательные модули</a></li>
+                    <li><a href="gallery">Фотогалерея</a></li>
+                    <li><a href="contact">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="main">
+        <div class="container">
+
+            <div class="main__about mb">
+                <div class="main__title-about">
+                    {% block body_title %}{% endblock %}
+                </div>
+
+                <div class="main__img-about">
+                    <img src="{{ url_for('static', filename='imgs/main.jpg') }}" alt="Главное изображение">
+                </div>
+            </div>
+
+
+            <div class="main__content">
+                {% block body_content_from_main %}{% endblock %}
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="page-footer teal lighten-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Кодинг</h5>
+                    <p class="grey-text text-lighten-4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis earum officiis fugiat laborum
+                        fugit tenetur? Consectetur eligendi eius, omnis fugit laboriosam adipisci deleniti sunt alias
+                        necessitatibus et repellat reiciendis laudantium.
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2023 Copyright Text
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+{% block script %}{% endblock %}
+
+</html>

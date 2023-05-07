@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Фотогалерея
+{% endblock %}
+
+{% block body_title %}
+<h2>Фотогалерея</h2>
+{% endblock %}
+
+{% block body_content_from_main %}
+<div class="app">
+
+</div>
+{% endblock %}
+
+
+
+{% block script %}
+<script src="{{ url_for('static', filename='script/gallery.js') }}"></script>
+{% endblock %}
