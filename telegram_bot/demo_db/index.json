@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "message": "09.05.2023 занятие не будет",
+    "topic": "learn",
+    "link": ""
+  },
+  {
+    "id": 2,
+    "message": "JavaScript| ",
+    "topic": "it",
+    "link": ""
+  },
+  {
+    "id": 3,
+    "message": "13.05.2023 занятие не будет",
+    "topic": "learn",
+    "link": ""
+  },
+  {
+    "id": 4,
+    "message": "16.05.2023 занятие не будет",
+    "topic": "learn",
+    "link": ""
+  }
+]
